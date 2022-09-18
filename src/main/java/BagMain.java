@@ -41,6 +41,7 @@ class BagMain {
                 // Have to cast to use crossbody specific methods
                 total += ((CrossbodyBag) b).getNumberOfStraps();
             }
-        } return total;
+        }
+        return total;
     }
 }

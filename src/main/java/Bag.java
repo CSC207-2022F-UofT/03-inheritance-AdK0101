@@ -94,7 +94,7 @@ public abstract class Bag {
      *
      * If there are no items in this Bag, return null.
      *
-     * @return
+     * @return finalItem of the array
      */
     public String popItem(){
         if (this.numberOfContents == 0) {
@@ -117,6 +117,11 @@ public abstract class Bag {
     public void increaseCapacity(int n) {
         // TODO: Implement this method.
         this.capacity += n;
+        String[] new_arr = new String[capacity];
+        for (int i = 0; i < this.numberOfContents; i++){
+            new_arr[i] = this.contents[i];
+        }
+        this.contents = new_arr;
     }
 
     /**
@@ -124,7 +129,7 @@ public abstract class Bag {
      * This method requires you to have created the private
      * instance variables mentioned above.
      *
-     * @return
+     * @return returns the string representation of a given bag
      */
     @Override
     public String toString() {

@@ -12,7 +12,7 @@ public class HandBag extends Bag{
      * Creates a new HandBag with the given color and
      * capacity.
      *
-     * @param color
+     * @param color the colour of the string
      * @param capacity
      */
     public HandBag(String color, int capacity) {
